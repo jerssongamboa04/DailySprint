@@ -53,6 +53,7 @@ body {
   width: 350px;
 }
 
+
 .progress-container::before {
   content: '';
   background-color: var(--line-border-empty);
@@ -64,6 +65,9 @@ body {
   width: 100%;
   z-index: -1;
 }
+
+
+
 
 .btn {
   background-color: var(--line-border-fill);
@@ -87,3 +91,14 @@ body {
 }
 
 
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
